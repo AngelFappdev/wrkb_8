@@ -1,5 +1,18 @@
 <body>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, accusamus est. Ipsam ut provident veritatis tenetur at! Eum deserunt natus amet aut nisi explicabo quos maxime beatae. Debitis, dicta nulla!</p>
+    <input id="name" readonly="readonly">
+    <div id="kind"></div>
 </body>
-<scipt>
-</scipt>
+<script>
+    function retrievedata(){
+      const name = document.getElementById("name")
+      if(localStorage.isStudent !== "false"){
+        name.value = localStorage.student
+      }
+      else{
+        name.value = localStorage.instructor
+      }
+    kind.innerHTML = localStorage.isStudent === "true" ? "Welcome student" : "Welcome instructor"
+    }
+    retrievedata()
+</script>

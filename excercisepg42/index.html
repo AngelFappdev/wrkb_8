@@ -6,10 +6,13 @@
 </body>
 <script>
     function information(id){
+        const name = document.getElementById("name")
         if(student.checked){
+            localStorage.isStudent= true 
             localStorage.student = name.value
             location.href = "information.html"
         }else if(instructor.checked){
+            localStorage.isStudent= false 
            localStorage.instructor = name.value
            location.href = "information.html"
         }else{
