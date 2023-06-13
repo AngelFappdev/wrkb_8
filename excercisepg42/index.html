@@ -1,0 +1,20 @@
+<body>
+    <input id="name" placeholder="Enter Your Name">
+    <input id="student" type="radio" name="si">Student<br>
+    <input id="instructor" type="radio" name="si">Instructor<br>
+    <input id="enter" type="button"value="ENTER">
+</body>
+<script>
+    function information(id){
+        if(student.checked){
+            localStorage.student = name.value
+            location.href = "information.html"
+        }else if(instructor.checked){
+           localStorage.instructor = name.value
+           location.href = "information.html"
+        }else{
+           window.alert("try again")
+        }   
+    };
+    enter.onclick = information
+</script>
