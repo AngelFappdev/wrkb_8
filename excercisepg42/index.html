@@ -11,11 +11,13 @@
             localStorage.isStudent= true 
             localStorage.student = name.value
             location.href = "information.html"
-        }else if(instructor.checked){
-            localStorage.isStudent= false 
+        }
+        else if(instructor.checked){
+           localStorage.isStudent= false 
            localStorage.instructor = name.value
            location.href = "information.html"
-        }else{
+        }
+        else{
            window.alert("try again")
         }   
     };
